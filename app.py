@@ -13,7 +13,9 @@ nest_asyncio.apply()
 # Load environment variables
 load_dotenv()
 
-GOOGLE_API_Key="AIzaSyADhR8kAyuSxT6woG4vz9xNKGzOBIesoAA"
+
+GOOGLE_API_KEY="AIzaSyBRQN9-a4LLn2L9CZ1dSzUvDD3EdKAgGVI"
+
 os.environ['GOOGLE_API_KEY'] = GOOGLE_API_Key
 # Initialize the LLM (Generative AI model)
 llm = ChatGoogleGenerativeAI(
