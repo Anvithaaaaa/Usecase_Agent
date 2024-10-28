@@ -233,7 +233,6 @@ python-rapidjson==1.20
 pytils==0.4.1
 pytube==15.0.0
 pytz==2024.2
-pywin32
 PyYAML==6.0.2
 pyzmq==26.2.0
 RapidFuzz==3.10.0
