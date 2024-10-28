@@ -14,19 +14,19 @@ nest_asyncio.apply()
 load_dotenv()
 
 
-GOOGLE_API_KEY="AIzaSyBRQN9-a4LLn2L9CZ1dSzUvDD3EdKAgGVI"
+GOOGLE_API_TOKEN=st.secrets[GOOGLE_API]
 
-os.environ['GOOGLE_API_KEY'] = GOOGLE_API_Key
+os.environ['GOOGLE_API_KEY'] = GOOGLE_API_TOKEN
 # Initialize the LLM (Generative AI model)
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
     verbose=True,
     temperature=0.5,
-    google_api_key=GOOGLE_API_Key
+    google_api_key=GOOGLE_API_TOKEN
 )
 
 # Define tools and agents
-SERPER_API_Key="358e9f7186c69f124015c50ca93f38f6e90f38f4"
+SERPER_API_Key=st.secrets[SERPER_API]
 os.environ['SERPER_API_KEY'] = SERPER_API_Key
 
 search_tool = SerperDevTool()
