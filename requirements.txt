@@ -329,3 +329,5 @@ webencodings==0.5.1
 yarg==0.1.9
 chroma-hnswlib==0.7.3
 chromadb==0.4.24
+
+pysqlite3-binary
